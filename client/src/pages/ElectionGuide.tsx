@@ -100,6 +100,12 @@ const slides = [
             <p className="text-sm text-muted-foreground">ออกเสียงเพื่อการเปลี่ยนแปลงรัฐธรรมนูญ</p>
           </div>
         </div>
+
+        <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
+          <p className="text-sm text-amber-800">
+            <strong>หมายเหตุ:</strong> การออกเสียงประชามติครั้งนี้ กำหนดวันลงคะแนนในวันอาทิตย์ที่ 8 กุมภาพันธ์ 2569 พร้อมกันทั่วประเทศ โดย<strong>ไม่มีการลงคะแนนออกเสียงล่วงหน้า</strong>
+          </p>
+        </div>
       </div>
     ),
     color: "from-emerald-50 to-teal-50",
