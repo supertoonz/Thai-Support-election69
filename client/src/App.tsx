@@ -9,7 +9,11 @@ import ElectionGuide from "@/pages/ElectionGuide";
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={ElectionGuide} />
+      <Route path="/thai-support-election69" component={ElectionGuide} />
+      <Route path="/">
+        {/* Redirect to the specific path or show guide at root too */}
+        <ElectionGuide />
+      </Route>
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
