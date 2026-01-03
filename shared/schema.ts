@@ -9,10 +9,16 @@ export const users = pgTable("users", {
   password: text("password").notNull(),
 });
 
-export const insertUserSchema = createInsertSchema(users).pick({
-  username: true,
-  password: true,
+export const electionInfo = pgTable("election_info", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  key: text("key").notNull().unique(),
+  value: text("value").notNull(),
 });
 
-export type InsertUser = z.infer<typeof insertUserSchema>;
-export type User = typeof users.$inferSelect;
+export const insertElectionInfoSchema = createInsertSchema(electionInfo).pick({
+  key: true,
+  value: true,
+});
+
+export type InsertElectionInfo = z.infer<typeof insertElectionInfoSchema>;
+export type ElectionInfo = typeof electionInfo.$inferSelect;
