@@ -94,42 +94,43 @@ const slides = [
   },
   {
     title: "สิ่งที่ต้องเตรียม",
-    subtitle: "ข้อมูลสำคัญที่ต้องใช้ในการลงทะเบียน",
+    subtitle: "เตรียมข้อมูลเหล่านี้ให้พร้อมก่อนลงทะเบียน",
     content: (
       <div className="space-y-4">
-        <Card className="border-none bg-white/60 backdrop-blur-sm shadow-md">
-          <CardContent className="p-6">
-            <div className="flex gap-4 items-start">
-              <div className="bg-amber-100 p-3 rounded-xl">
-                <Search className="w-6 h-6 text-amber-600" />
+        <div className="grid grid-cols-1 gap-3">
+          <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl border border-white shadow-sm flex items-center gap-4">
+            <div className="bg-blue-100 p-2.5 rounded-xl text-blue-600">
+              <UserCheck className="w-5 h-5" />
+            </div>
+            <div className="font-bold text-slate-800">ข้อมูลในบัตรประชาชน</div>
+          </div>
+          <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl border border-white shadow-sm flex items-center gap-4">
+            <div className="bg-indigo-100 p-2.5 rounded-xl text-indigo-600">
+              <MapPin className="w-5 h-5" />
+            </div>
+            <div className="font-bold text-slate-800">รหัสประจำบ้าน</div>
+          </div>
+        </div>
+
+        <Card className="border-none bg-amber-50/50 backdrop-blur-sm shadow-sm border border-amber-100">
+          <CardContent className="p-5">
+            <div className="flex gap-3 items-start">
+              <div className="bg-amber-100 p-2 rounded-lg mt-1">
+                <Search className="w-4 h-4 text-amber-600" />
               </div>
               <div>
-                <h4 className="font-bold text-lg mb-2">หารหัสประจำบ้านไม่เจอ?</h4>
-                <p className="text-muted-foreground leading-relaxed">
-                  ไม่ต้องกังวล! คุณสามารถตรวจสอบรหัสประจำบ้านได้จาก:
+                <h4 className="font-bold text-amber-900 mb-1">Note: หากหารหัสประจำบ้านไม่เจอ</h4>
+                <p className="text-sm text-amber-800/80 leading-relaxed">
+                  สามารถตรวจสอบได้จาก <strong>หน้าแรกของทะเบียนบ้าน</strong> หรือดูผ่านแอปพลิเคชัน <strong>ThaID</strong> ได้ทันที
                 </p>
-                <ul className="mt-3 space-y-2">
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                    <span>หน้าแรกของทะเบียนบ้าน (เล่มสีน้ำเงิน)</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
-                    <span>แอปพลิเคชัน <span className="font-bold text-primary">ThaID</span> (สะดวกที่สุด)</span>
-                  </li>
-                </ul>
               </div>
             </div>
           </CardContent>
         </Card>
-        <div className="bg-primary/10 p-4 rounded-xl flex items-center gap-3">
-          <Info className="w-5 h-5 text-primary" />
-          <p className="text-sm font-medium">เตรียมบัตรประชาชนตัวจริงให้พร้อมก่อนเริ่ม</p>
-        </div>
       </div>
     ),
     color: "from-amber-50 to-orange-50",
-    icon: <UserCheck className="w-12 h-12 text-amber-600/20" />
+    icon: <Search className="w-12 h-12 text-amber-600/20" />
   }
 ];
 
