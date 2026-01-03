@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, Redirect } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -11,8 +11,7 @@ function Router() {
     <Switch>
       <Route path="/thai-support-election69" component={ElectionGuide} />
       <Route path="/">
-        {/* Redirect to the specific path or show guide at root too */}
-        <ElectionGuide />
+        <Redirect to="/thai-support-election69" replace />
       </Route>
       {/* Fallback to 404 */}
       <Route component={NotFound} />
