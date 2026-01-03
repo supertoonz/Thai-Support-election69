@@ -115,7 +115,7 @@ const slides = [
         <Card className="border-none bg-amber-50/50 backdrop-blur-sm shadow-sm border border-amber-100">
           <CardContent className="p-5">
             <div className="flex gap-3 items-start">
-              <div className="bg-amber-100 p-2 rounded-lg mt-1">
+              <div className="bg-amber-100 p-2 rounded-lg mt-1 flex flex-col items-center gap-1">
                 <Search className="w-4 h-4 text-amber-600" />
               </div>
               <div>
@@ -123,15 +123,26 @@ const slides = [
                 <p className="text-sm text-amber-800/80 leading-relaxed mb-3">
                   สามารถตรวจสอบได้จาก <strong>หน้าแรกของทะเบียนบ้าน</strong> หรือดูผ่านแอปพลิเคชัน <strong>ThaID</strong> ได้ทันที
                 </p>
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="h-8 text-xs border-amber-200 bg-amber-100/50 hover:bg-amber-100 text-amber-900"
-                  onClick={() => window.open('https://boraservices.bora.dopa.go.th/election/outvote/', '_blank')}
-                >
-                  <ExternalLink className="mr-2 w-3 h-3" />
-                  ไปยังหน้าลงทะเบียน
-                </Button>
+                <div className="flex flex-wrap gap-2">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="h-8 text-xs border-amber-200 bg-amber-100/50 hover:bg-amber-100 text-amber-900"
+                    onClick={() => window.open('https://boraservices.bora.dopa.go.th/election/outvote/', '_blank')}
+                  >
+                    <ExternalLink className="mr-2 w-3 h-3" />
+                    ไปยังหน้าลงทะเบียน
+                  </Button>
+                  <Button 
+                    variant="ghost" 
+                    size="sm" 
+                    className="h-8 text-xs text-amber-700 hover:text-amber-900 hover:bg-amber-100/50"
+                    onClick={() => window.open('https://www.ect.go.th/ect_th/news_all.php?cid=156', '_blank')}
+                  >
+                    <Search className="mr-2 w-3 h-3" />
+                    ไปค้นหา สส ในเขตคุณกัน
+                  </Button>
+                </div>
               </div>
             </div>
           </CardContent>
