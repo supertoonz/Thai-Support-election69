@@ -120,9 +120,18 @@ const slides = [
               </div>
               <div>
                 <h4 className="font-bold text-amber-900 mb-1">Note: หากหารหัสประจำบ้านไม่เจอ</h4>
-                <p className="text-sm text-amber-800/80 leading-relaxed">
+                <p className="text-sm text-amber-800/80 leading-relaxed mb-3">
                   สามารถตรวจสอบได้จาก <strong>หน้าแรกของทะเบียนบ้าน</strong> หรือดูผ่านแอปพลิเคชัน <strong>ThaID</strong> ได้ทันที
                 </p>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="h-8 text-xs border-amber-200 bg-amber-100/50 hover:bg-amber-100 text-amber-900"
+                  onClick={() => window.open('https://boraservices.bora.dopa.go.th/election/outvote/', '_blank')}
+                >
+                  <ExternalLink className="mr-2 w-3 h-3" />
+                  ไปยังหน้าลงทะเบียน
+                </Button>
               </div>
             </div>
           </CardContent>
