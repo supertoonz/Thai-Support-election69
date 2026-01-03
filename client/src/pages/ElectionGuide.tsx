@@ -59,7 +59,7 @@ const slides = [
   },
   {
     title: "บันทึกวันเลือกตั้ง",
-    subtitle: "เตรียมตัวให้พร้อมสำหรับ 2 วันสำคัญ",
+    subtitle: "เตรียมตัวให้พร้อมสำหรับวันสำคัญเหล่านี้",
     content: (
       <div className="grid grid-cols-1 gap-4">
         <div className="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-4 relative overflow-hidden">
@@ -85,6 +85,19 @@ const slides = [
             <Badge variant="outline" className="mb-1 border-emerald-200 text-emerald-600">เลือกตั้งปกติ</Badge>
             <h3 className="font-bold text-xl">วันเลือกตั้ง สส. (ทั่วไป)</h3>
             <p className="text-sm text-muted-foreground">สำหรับผู้ใช้สิทธิในเขตทะเบียนบ้านตนเอง</p>
+          </div>
+        </div>
+
+        <div className="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-4 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-orange-500/5 rounded-full -mr-12 -mt-12" />
+          <div className="text-center min-w-[80px]">
+            <span className="block text-sm text-muted-foreground uppercase tracking-wider">กุมภาพันธ์</span>
+            <span className="block text-4xl font-black text-orange-600">08</span>
+          </div>
+          <div className="flex-1">
+            <Badge variant="outline" className="mb-1 border-orange-200 text-orange-600">ประชามติ</Badge>
+            <h3 className="font-bold text-xl">วันออกเสียงประชามติแก้ รธน.</h3>
+            <p className="text-sm text-muted-foreground">ออกเสียงเพื่อการเปลี่ยนแปลงรัฐธรรมนูญ</p>
           </div>
         </div>
       </div>
