@@ -19,6 +19,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/thai-support-election69" component={ElectionGuide} />
+      <Route path="/index.html" component={RootRedirect} />
       <Route path="/" component={RootRedirect} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
