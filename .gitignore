@@ -13,3 +13,10 @@ replit.nix
 .env
 .env.*
 !.env.example
+
+# Replit specific files
+attached_assets/
+drizzle.config.ts
+components.json
+replit.md
+package-lock.json
