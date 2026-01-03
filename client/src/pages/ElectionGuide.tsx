@@ -140,7 +140,7 @@ const slides = [
                     onClick={() => window.open('https://election69.peoplesparty.or.th/', '_blank')}
                   >
                     <Search className="mr-2 w-3 h-3" />
-                    ไปค้นหา สส ในเขตคุณกัน
+                    ค้นหารายชื่อ สส.ได้ที่
                   </Button>
                 </div>
               </div>
