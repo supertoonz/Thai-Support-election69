@@ -137,7 +137,7 @@ const slides = [
                     variant="ghost" 
                     size="sm" 
                     className="h-8 text-xs text-amber-700 hover:text-amber-900 hover:bg-amber-100/50"
-                    onClick={() => window.open('https://www.ect.go.th/ect_th/news_all.php?cid=156', '_blank')}
+                    onClick={() => window.open('https://election69.peoplesparty.or.th/', '_blank')}
                   >
                     <Search className="mr-2 w-3 h-3" />
                     ไปค้นหา สส ในเขตคุณกัน
